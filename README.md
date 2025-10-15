@@ -18,6 +18,16 @@ npm -v
 ```
 npx create-react-app my-app-name
 ```
+Refer for [More Frontend Execution Detail](my-profile/README.md) after initial setup completed
+
+# Backend setup
+> [!NOTE]
+> Backend and database setup work on VM machine
+> *Frontend (AWS S3 Buckets) -> Backend (Same VM as DB) -> Database (VM)*
+> **<ins>Make sure VM run in "Hardless" mode and Power Options is in High Peformance</ins>**
+
+Refer for [More Backend Execution Detail](backend/README.md) after completed the VM and its database server setup.
+
 
 # Common setup
 1. [GitHub Cheat Sheet](https://git-scm.com/cheat-sheet)
@@ -31,7 +41,7 @@ pwd
 ```
 cd your/project/path
 ```
-	- In the correct path, add `.gitignore`
+	- In the correct path, add [`.gitignore`](https://docs.github.com/en/get-started/git-basics/ignoring-files)
 ```
 touch .gitignore
 ```
