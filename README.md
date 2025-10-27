@@ -60,12 +60,12 @@ Refer for [More Backend Execution Detail](backend/README.md) after completed the
 pwd
 ```
 
-	- Navigate to project folder that want to add  `.gitignore`
+- Navigate to project folder that want to add  `.gitignore`
 ```
 cd your/project/path
 ```
 
-	- In the correct path, add [`.gitignore`](https://docs.github.com/en/get-started/git-basics/ignoring-files)
+- In the correct path, add [`.gitignore`](https://docs.github.com/en/get-started/git-basics/ignoring-files)
 ```
 touch .gitignore
 ```
