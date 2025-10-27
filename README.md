@@ -55,16 +55,14 @@ Refer for [More Backend Execution Detail](backend/README.md) after completed the
 1. [GitHub Cheat Sheet](https://git-scm.com/cheat-sheet)
 
 2. Add `.gitignore` from Git Bash
-	- Check current path
+- Check current path
 ```
 pwd
 ```
-
 - Navigate to project folder that want to add  `.gitignore`
 ```
 cd your/project/path
 ```
-
 - In the correct path, add [`.gitignore`](https://docs.github.com/en/get-started/git-basics/ignoring-files)
 ```
 touch .gitignore
