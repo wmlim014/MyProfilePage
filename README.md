@@ -34,7 +34,7 @@ npx create-vite@latest
 5. Install with npm and start now
 6. In `package.json` update `dev` in `scripts` as `vite --host`
 
-Refer for [More Frontend Execution Detail](my-profile/README.md) after initial setup completed
+Refer for [More Frontend Execution Detail](frontend/README.md) after initial setup completed
 
 # Backend setup
 ## MySQL Server Setup
@@ -59,10 +59,12 @@ Refer for [More Backend Execution Detail](backend/README.md) after completed the
 ```
 pwd
 ```
+
 	- Navigate to project folder that want to add  `.gitignore`
 ```
 cd your/project/path
 ```
+
 	- In the correct path, add [`.gitignore`](https://docs.github.com/en/get-started/git-basics/ignoring-files)
 ```
 touch .gitignore
