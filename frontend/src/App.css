@@ -1,0 +1,131 @@
+#root {
+  /* Color styles */
+  --dark-gray: #343A40;
+  --gray: #5B5F63;
+  --light-gray: #6C757D;
+  --white-gray: #9CA6B0;
+  --purple: #3A2E51;
+  --light-purple: #CFB8FA;
+  --alert-danger: #DC3545;
+  --alert-warning: #FFC107;
+  --alert-success: #28A745;
+  --alert-info: #17A2B8;
+
+  /* Font sizes */
+  --h1: 32px;
+  --h2: 24px;
+  --h3: 20px;
+  --body: 17px;
+  --button: 18px;
+  --footnote: 14px;
+
+  /* Others */
+  --radius: 8px;
+}
+
+.App {
+  width: auto;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Font Styles */
+.Bold-body {
+  font-weight: bold;
+}
+
+.Footnote {
+  font-size: var(--footnote);
+  text-transform: capitalize;
+}
+.Special-footnote {
+  font-size: var(--footnote);
+  font-style: italic;
+  font-weight: lighter;
+  text-transform: capitalize;
+}
+
+/* Logo Style */
+.Logo {
+  padding: 3px;
+  color: white;
+  border-radius: 8px;
+  font-size: var(--body);
+  align-self: center;
+  justify-self: center;
+  width: fit-content;
+  height: fit-content;
+}
+.Logo:hover {
+  background-color: white;
+  color: var(--purple);
+  cursor: pointer;
+}
+
+.Menu-logo {
+  padding: 3px;
+  color: white;
+  border-radius: 8px;
+  font-size: var(--h1);
+  align-self: center;
+  justify-self: center;
+  width: fit-content;
+  height: fit-content;
+}
+.Menu-logo:hover {
+  background-color: white;
+  color: var(--purple);
+  cursor: pointer;
+}
+
+/* Button Styles */
+.Primary-button {
+  background-color: var(--purple);
+  color: white;
+}
+.Primary-button:hover {
+  background-color: white;
+  color: var(--purple);
+}
+
+.Secondary-button {
+  background-color: transparent;
+  text-transform: capitalize;
+  color: var(--light-purple);
+  padding: 5px 8px;
+}
+.Secondary-button:hover {
+  color: white;
+}
+
+.Cancel-button {
+  background-color: transparent;
+  text-transform: capitalize;
+  color: var(--alert-danger);
+  padding: 5px 8px;
+  font-size: var(--footnote);
+}
+.Cancel-button:hover {
+  color: white;
+  border: none;
+
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}

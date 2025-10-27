@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com//css2?family=Roboto:wght@300');
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: white;
+  background-color: var(--dark-gray);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Component Style */
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Text Style */
+a {
+  color: var(--purple);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--light-purple);
+  cursor: pointer;
+}
+
+h1 {
+  font-size: var(--h1);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--purple);
+  background-color: var(--white-gray);
+  padding: 0px 5px;
+  width: 100%;
+}
+
+h2 {
+  font-size: var(--h2);
+  font-weight: bold;
+  text-transform: capitalize;
+  color: var(--light-purple);
+}
+
+h3 {
+  font-size: var(--h3);
+  text-transform: capitalize;
+  text-decoration: underline;
+  color: var(--white-gray);
+}
+
+p {
+  font-size: var(--body);
+}
+
+span {
+  font-size: var(--footnote);
+}
+
+/* Unordered List Style */
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: var(--body);
+
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+/* Small Components Style */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 10px 15px;
+  font-family: inherit;
+  font-size: var(--button);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 0.15s;
+  height: fit-content;
+}
+button:hover {
+  border-color: var(--light-purple);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
