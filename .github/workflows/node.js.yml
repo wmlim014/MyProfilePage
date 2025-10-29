@@ -3,6 +3,9 @@
 
 name: Deploy using GitHub Action
 
+permissions:
+  contents: write
+
 on:
   push:
     branches: [ "main" ]
