@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com//css2?family=Roboto:wght@300');
+/* @import url('https://fonts.googleapis.com//css2?family=Roboto:wght@300'); */
 
 :root {
   font-family: 'Roboto', sans-serif;
@@ -20,6 +20,8 @@ div {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  justify-content: flex-start;
+  align-self: flex-start;
 }
 
 /* Text Style */
@@ -38,8 +40,10 @@ h1 {
   text-transform: uppercase;
   color: var(--purple);
   background-color: var(--white-gray);
-  padding: 0px 5px;
   width: 100%;
+  height: fit-content;
+  margin: 15px 0px;
+  padding: 0px 10px;
 }
 
 h2 {
@@ -47,6 +51,9 @@ h2 {
   font-weight: bold;
   text-transform: capitalize;
   color: var(--light-purple);
+  height: fit-content;
+  margin: 5px 0px;
+  padding: 0px 10px;
 }
 
 h3 {
@@ -54,14 +61,19 @@ h3 {
   text-transform: capitalize;
   text-decoration: underline;
   color: var(--white-gray);
+  height: fit-content;
+  margin: 5px 0px;
+  padding: 0px 10px;
 }
 
 p {
   font-size: var(--body);
+  margin: 3px 0px;
 }
 
 span {
   font-size: var(--footnote);
+  text-transform: capitalize;
 }
 
 /* Unordered List Style */

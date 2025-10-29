@@ -1,10 +1,61 @@
 import React from 'react';
 import { MdHomeFilled } from "react-icons/md";
+import { useAlert } from '../../assets/alert/AlertContext';
 
 import './DefaultAssets.css';
 import '../../App.css';
 
 function DefaultAssets() {
+    const { showAlert } = useAlert();
+
+    const displayAlert = (alertType: String) => {
+        if(alertType === 'error'){
+            showAlert(
+                'Error Alert',
+                'Test on Error Alert',
+                'This is a test error message',
+                {
+                    type: 'error',
+                    duration: 5000, // Default value
+                    closable: true, // Default value
+                }
+            )
+        } else if (alertType === 'warning'){
+            showAlert(
+                'Warning Alert',
+                'Test on Warning Alert',
+                'This is a test warning message',
+                {
+                    type: 'warning',
+                    duration: 5000, // Default value
+                    closable: true, // Default value
+                }
+            )
+        } else if (alertType === 'success'){
+            showAlert(
+                'Success Alert',
+                'Test on Success Alert',
+                'This is a test success message',
+                {
+                    type: 'success',
+                    duration: 5000, // Default value
+                    closable: true, // Default value
+                }
+            )
+        } else {
+            showAlert(
+                'Info Alert',
+                'Test on Info Alert',
+                'This is a test info message',
+                {
+                    type: 'info',
+                    duration: 5000, // Default value
+                    closable: true, // Default value
+                }
+            )
+        }
+    }
+
     return (
         <ul>
             <li>
@@ -40,8 +91,44 @@ function DefaultAssets() {
                 <h3>home</h3>
             </li>
             <li>
-                Span&nbsp;&rarr;&nbsp;
+                Body&nbsp;&rarr;&nbsp;
+                <p>home</p>
+            </li>
+            <li>
+                Bold Body&nbsp;&rarr;&nbsp;
+                <p className='Bold-body'>home</p>
+            </li>
+            <li>
+                Span / Footnote&nbsp;&rarr;&nbsp;
                 <span>home</span>
+            </li>
+            <li>
+                Special Span / Footnote&nbsp;&rarr;&nbsp;
+                <span className='Special-footnote'>home</span>
+            </li>
+            <li>
+                Danger Alert&nbsp;&rarr;&nbsp;
+                <button onClick={() => displayAlert('error')}>
+                    Display Error's Alert
+                </button>
+            </li>
+            <li>
+                Warning Alert&nbsp;&rarr;&nbsp;
+                <button onClick={() => displayAlert('warning')}>
+                    Display Warning's Alert
+                </button>
+            </li>
+            <li>
+                Success Alert&nbsp;&rarr;&nbsp;
+                <button onClick={() => displayAlert('success')}>
+                    Display Success's Alert
+                </button>
+            </li>
+            <li>
+                Info Alert&nbsp;&rarr;&nbsp;
+                <button onClick={() => displayAlert('info')}>
+                    Display Info's Alert
+                </button>
             </li>
         </ul>
     )
