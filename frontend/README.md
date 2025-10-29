@@ -27,3 +27,4 @@ npm run dev
 2. [React Icons](https://react-icons.github.io/react-icons/)
 3. [React Tooltips](https://react-tooltip.com/docs/getting-started)
 4. [HTML Symbol Code](https://www.w3schools.com/html/html_symbols.asp)
+5. 

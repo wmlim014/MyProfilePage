@@ -6,10 +6,10 @@
   --white-gray: #9CA6B0;
   --purple: #3A2E51;
   --light-purple: #CFB8FA;
-  --alert-danger: #DC3545;
-  --alert-warning: #FFC107;
-  --alert-success: #28A745;
-  --alert-info: #17A2B8;
+  --alert-error: #5A0C14;
+  --alert-warning: #806B20;
+  --alert-success: #165A26;
+  --alert-info: #236C77;
 
   /* Font sizes */
   --h1: 32px;
@@ -24,24 +24,21 @@
 }
 
 .App {
-  width: auto;
+  width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  justify-items: center;
+  /* justify-content: center; */
+  justify-content: space-between;
   align-items: center;
 }
 
 /* Font Styles */
 .Bold-body {
   font-weight: bold;
+  margin: 8px 0px;
 }
 
-.Footnote {
-  font-size: var(--footnote);
-  text-transform: capitalize;
-}
 .Special-footnote {
   font-size: var(--footnote);
   font-style: italic;
@@ -59,6 +56,7 @@
   justify-self: center;
   width: fit-content;
   height: fit-content;
+  background-color: transparent;
 }
 .Logo:hover {
   background-color: white;
@@ -105,14 +103,14 @@
 .Cancel-button {
   background-color: transparent;
   text-transform: capitalize;
-  color: var(--alert-danger);
+  color: var(--alert-error);
   padding: 5px 8px;
   font-size: var(--footnote);
 }
 .Cancel-button:hover {
+  background-color: var(--alert-error);
   color: white;
   border: none;
-
 }
 
 @keyframes logo-spin {

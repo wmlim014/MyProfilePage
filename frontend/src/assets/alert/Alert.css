@@ -1,0 +1,54 @@
+.alert-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    min-width: 300px;
+    max-width: 75%;
+    padding: 8px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    align-items: center;
+    animation: slideIn 0.3s ease-out;
+    justify-content: flex-start;
+}
+
+/* Alert Title */
+.alert-title {
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-width: 1.35px;
+    border-bottom-color: white;
+}
+.alert-title-header {
+    justify-content: flex-start;
+    gap: 5px;
+    align-items: center;
+
+    h2 {
+        color: white;
+    }
+}
+
+/* Alert Contain */
+.alert-content {
+    gap: 3px;
+    justify-content: flex-start;
+}
+.alert-content-msg {
+    padding: 0px 8px;
+}
+
+/* Alert Color Type */
+.alert-error {
+    background-color: var(--alert-error);
+}
+.alert-warning {
+    background-color: var(--alert-warning);
+}
+.alert-success {
+    background-color: var(--alert-success);
+}
+.alert-info {
+    background-color: var(--alert-info);
+}
