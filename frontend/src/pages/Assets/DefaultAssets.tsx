@@ -1,4 +1,3 @@
-import React from 'react';
 import { MdHomeFilled } from "react-icons/md";
 import { useAlert } from '../../assets/alert/AlertContext';
 
